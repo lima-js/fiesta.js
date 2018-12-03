@@ -1,0 +1,30 @@
+body {
+	background: url(https://images.pexels.com/photos/957061/milky-way-starry-sky-night-sky-star-957061.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+		no-repeat;
+}
+#logo {
+	height: 150vh;
+	left: calc(50% - 840px);
+	position: absolute;
+	top: 0px;
+	transform: scaleX(-1);
+}
+#blocks {
+	height: 115vh;
+	width: 100%;
+}
+#path {
+	fill: white;
+	stroke-width: 15%;
+}
+#teaser {
+	background: black;
+	color: white;
+	font-family: sans-serif;
+	font-size: 2rem;
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+	top: -180px;
+	width: 500px;
+}
