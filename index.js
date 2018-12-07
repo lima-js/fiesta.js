@@ -13,8 +13,27 @@ function ready(callback) {
 	});
 }
 
+const buildAgendaItem = (data, index) => `
+	<li class="agenda-item">
+		<div class="${index % 2 ? 'agenda-content-even' : 'agenda-content-odd'}">
+			${data.photo ? `<div class="photo" style="background-image: url(${data.photo});"></div>` : ''}
+			<h2 class="title">${data.name}</h2>
+			${data.speaker && data.social ? `<p class="speaker"><a class="social" href="${data.social}">${data.speaker}</a></p>` :
+			data.speaker ? `<p class="speaker">${data.speaker}</p>` : ''}
+			<p class="time">${data.time}</p>
+		</div>
+	</li>
+`;
+
+const agenda = holder => {
+	fetch('agenda.json').then(response => response.json())
+	.then(data => holder.innerHTML = data.map(buildAgendaItem).join(''));
+};
+
 ready(() => {
 	const paths = document.querySelectorAll('#blocks path');
+	const agendaHolder = document.querySelector('#agenda');
+	const agendaScroller = document.querySelector('#agenda-scroller');
 	const paint = (node, opacity) => node.setAttribute('fill-opacity', opacity);
 	const randomValue = (max, min = 1) => Math.floor(Math.random() * max) + min;
 	const randomId = () => randomValue(paths.length - 1);
@@ -32,4 +51,8 @@ ready(() => {
 	};
 
 	painter();
+	agenda(agendaHolder);
+	agendaScroller.addEventListener('click', () => {
+		animateScrollTo(agendaScroller);
+	});
 });

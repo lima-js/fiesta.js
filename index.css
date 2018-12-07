@@ -4,10 +4,19 @@ body {
 ::selection {
 	background: turquoise;
 }
+.reset-button {
+	background: none;
+	border: none;
+	color: inherit;
+	cursor: pointer;
+	font: inherit;
+	outline: inherit;
+	padding: 0;
+}
 #description {
 	color: rgba(255, 255, 255, .8);
 	font-family: monospace, monospace;
-	font-size: 3rem;
+	font-size: 2.5rem;
 	position: relative;
 	z-index: 1;
 }
@@ -42,4 +51,69 @@ body {
 #path {
 	fill: white;
 	stroke-width: 15%;
+}
+
+#agenda-holder {
+	left: calc(50% - 400px);
+	position: absolute;
+	top: 90vh;
+	width: 800px;
+}
+@media (max-width: 768px) {
+	#agenda-holder {
+		left: 0;
+		width: 100%;
+	}
+}
+#agenda-scroller {
+	color: rgba(255, 255, 255, .8);
+	cursor: pointer;
+	display: block;
+	font-family: monospace, monospace;
+	font-size: 3rem;
+	margin: 0 auto 100px;
+	position: relative;
+	width: 300px;
+	z-index: 1;
+}
+#agenda-scroller:after {
+	content: " ⏬";
+}
+#agenda {
+	color: rgba(255, 255, 255, .8);
+	font-family: monospace, monospace;
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+	width: 100%;
+}
+.agenda-item {
+	margin-bottom: 40px;
+	min-height: 100px;
+	width: 50%;
+}
+.agenda-content-odd {
+	padding-right: 30px;
+	text-align: right;
+}
+.agenda-content-even {
+	left: calc(100% - 30px);
+	padding-left: 30px;
+	position: relative;
+}
+.agenda-item .photo {
+	background-size: cover;
+	background: no-repeat center center;
+	display: block;
+	height: 200px;
+}
+.agenda-item .speaker {
+	margin-bottom: 0;
+}
+.agenda-item .social {
+	color: white;
+}
+.agenda-item .time {
+	margin: 0;
 }

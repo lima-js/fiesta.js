@@ -1,0 +1,77 @@
+[
+	{
+		"name": "Registro y Recepción",
+		"time": "10:00 - 10:30"
+	},
+	{
+		"name": "Palabras de Inicio",
+		"time": "10:30 - 10:45"
+	},
+	{
+		"name": "5 Essential technologies to keep your JS apps sane and scalable",
+		"speaker": "Martin Zlámal",
+		"time": "10:45 - 11:15",
+		"photo": "https://avatars0.githubusercontent.com/u/978368?s=460&v=4",
+		"social": "https://github.com/mrtnzlml"
+	},
+	{
+		"name": "Brunch",
+		"time": "11:15 - 11:30",
+		"photo": "https://www.halfbakedharvest.com/wp-content/uploads/2017/04/Breakfast-Tacos-Al-Pastor-1.jpg"
+	},
+	{
+		"name": "Experiencias de integración Javascript con servicios del Estado",
+		"speaker": "Cristiam Castillo – Secretaría de Gobierno Digital PCM",
+		"time": "11:30 - 12:30",
+		"photo": "https://avatars0.githubusercontent.com/u/196513?s=460&v=4",
+		"social": "https://github.com/ccastillop"
+	},
+	{
+		"name": "Speech to text",
+		"speaker": "Juan La Jara",
+		"time": "12:30 - 13:00",
+		"photo": "https://avatars1.githubusercontent.com/u/324686?s=460&v=4",
+		"social": "https://github.com/wixo"
+	},
+	{
+		"name": "Almuerzo",
+		"time": "13:00 - 14:30",
+		"photo": "https://d9hyo6bif16lx.cloudfront.net/live/img/production/detail/menu/lunch-dinner_soups-salads_apple-harvest-salad.jpg"
+	},
+	{
+		"name": "Web Assembly, Rust y el futuro de JavaScript",
+		"speaker": "Lupo Montero",
+		"time": "14:30 - 15:00",
+		"photo": "https://pbs.twimg.com/profile_images/593084224833368064/2ny_sbcm_400x400.jpg",
+		"social": "https://twitter.com/lupomontero"
+	},
+	{
+		"name": "Formando una Comunidad",
+		"speaker": "Elizabeth Portilla",
+		"time": "15:00 - 15:30",
+		"photo": "https://pbs.twimg.com/profile_images/869289669435043841/F4kGSpiy_400x400.jpg",
+		"social": "https://twitter.com/lizita136"
+	},
+	{
+		"name": "Re-registro",
+		"time": "16:00 - 16:30",
+		"photo": "http://www.socorroespacio.com/wp-content/uploads/2015/03/SOCORRO-brochure-2015_web-1.jpg"
+	},
+	{
+		"name": "Composición algoritmica con JavaScript",
+		"time": "16:30 - 18:00",
+		"speaker": "Moises Cachay",
+		"photo": "https://avatars0.githubusercontent.com/u/1197235?s=460&v=4",
+		"social": "https://github.com/xpktro"
+	},
+	{
+		"name": "Torneo de PPT Karaoke",
+		"time": "18:00 - 19:00",
+		"photo": "https://st-listas.20minutos.es/images/2015-10/402821/list_640px.jpg?1448222190"
+	},
+	{
+		"name": "Fiesta.JS",
+		"time": "19:00 - 22:00",
+		"photo": "https://media-cdn.tripadvisor.com/media/photo-s/06/75/ac/32/kultur-berlin-hostal.jpg"
+	}
+]
