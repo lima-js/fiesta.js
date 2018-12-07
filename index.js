@@ -30,10 +30,7 @@ const agenda = holder => {
 	.then(data => holder.innerHTML = data.map(buildAgendaItem).join(''));
 };
 
-ready(() => {
-	const paths = document.querySelectorAll('#blocks path');
-	const agendaHolder = document.querySelector('#agenda');
-	const agendaScroller = document.querySelector('#agenda-scroller');
+const decor = paths => {
 	const paint = (node, opacity) => node.setAttribute('fill-opacity', opacity);
 	const randomValue = (max, min = 1) => Math.floor(Math.random() * max) + min;
 	const randomId = () => randomValue(paths.length - 1);
@@ -51,6 +48,14 @@ ready(() => {
 	};
 
 	painter();
+};
+
+ready(() => {
+	const paths = document.querySelectorAll('#blocks path');
+	const agendaHolder = document.querySelector('#agenda');
+	const agendaScroller = document.querySelector('#agenda-scroller');
+
+	decor(paths);
 	agenda(agendaHolder);
 	agendaScroller.addEventListener('click', () => {
 		animateScrollTo(agendaScroller);
