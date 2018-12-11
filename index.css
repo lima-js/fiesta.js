@@ -1,5 +1,25 @@
+.dont-break-out {
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	-ms-word-break: break-all;
+	word-break: break-all;
+	word-break: break-word;
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
+}
 body {
 	background: url(https://images.pexels.com/photos/957061/milky-way-starry-sky-night-sky-star-957061.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+header {
+	width: 100vw;
+}
+@media (max-width: 768px) {
+	header {
+		position: relative;
+		overflow: hidden;
+	}
 }
 ::selection {
 	background: turquoise;
@@ -23,6 +43,12 @@ body {
 .description-list {
 	list-style: none;
 }
+@media (max-width: 768px) {
+	.description-list {
+		margin: 0 0 40px;
+		padding: 0;
+	}
+}
 .description-list a {
 	color: rgba(255, 255, 255, .8);
 }
@@ -35,6 +61,9 @@ body {
 @media (max-width: 768px) {
 	#decor {
 		opacity: .3;
+		overflow-x: hidden;
+		right: auto;
+		width: 768px;
 	}
 }
 #tardis {
@@ -62,6 +91,8 @@ body {
 @media (max-width: 768px) {
 	#agenda-holder {
 		left: 0;
+		position: relative;
+		top: 20px;
 		width: 100%;
 	}
 }
@@ -93,20 +124,40 @@ body {
 	min-height: 100px;
 	width: 50%;
 }
+@media (max-width: 768px) {
+	.agenda-item {
+		margin-bottom: 80px;
+		width: 100%;
+	}
+}
 .agenda-content-odd {
 	padding-right: 30px;
 	text-align: right;
+}
+@media (max-width: 768px) {
+	.agenda-content-odd {
+		padding-right: 0;
+		text-align: left;
+	}
 }
 .agenda-content-even {
 	left: calc(100% - 30px);
 	padding-left: 30px;
 	position: relative;
 }
+@media (max-width: 768px) {
+	.agenda-content-even {
+		left: 0;
+		padding-left: 0;
+		position: relative;
+	}
+}
 .agenda-item .photo {
 	background-size: cover;
 	background: no-repeat center center;
 	display: block;
 	height: 200px;
+	width: 375px;
 }
 .agenda-item .speaker {
 	margin-bottom: 0;
